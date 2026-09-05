@@ -4,9 +4,9 @@ void main() {
     {'name': 'Ali', 'eligible': true},
     {'name': 'Ahmed', 'eligible': false},
     {'name': 'Majid', 'eligible': true},
-    {'name': 'Bil', 'eligible': true},
+    {'name': 'Bilal', 'eligible': true},
     {'name': 'Kashif', 'eligible': false},
   ];
-  students.retainWhere((students) => students["eligible"] == true);
+  students.removeWhere((students) => students["eligible"] == false);
   print(students);
 }
