@@ -1,4 +1,4 @@
-// Q.17: Given a list of integers, write a Dart code that uses the map() method to create a new list with each value squared. The program should take in the original list as a parameter and print the new list.
+// Q.16: Implement a Dart code that uses the where() method to filter out odd numbers from a list of integers. The program should take in the original list as a parameter and print a new list containing only the even numbers.
 void main() {
   List<int> numbers = [
     1,
@@ -23,7 +23,8 @@ void main() {
     20,
   ];
 
-  List<int> squaredNumbers = numbers.map((i) => i * i).toList();
-  print("Original List        : $numbers");
-  print("Squared Numbers List : $squaredNumbers");
+  List<int> evenNumbers = numbers.where((i) => i % 2 == 0).toList();
+
+  print("Original List: $numbers");
+  print("Even Numbers List: $evenNumbers");
 }
