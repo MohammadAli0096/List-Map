@@ -1,9 +1,28 @@
-// Q.18: Create a map named "person" with the following key-value pairs: "name" as "John", "age" as 25, "isStudent" as true. Write a Dart code to check if the person is both a student and over 18 years old. Print "Eligible" if both conditions are true, otherwise print "Not eligible".
+// Q.17: Given a list of integers, write a Dart code that uses the map() method to create a new list with each value squared. The program should take in the original list as a parameter and print the new list.
 void main() {
-  Map<String, dynamic> person = {"name": "John", "age": 25, "isStudent": true};
-  if (person["isStudent"] == true && person["age"] > 18) {
-    print("Eligible");
-  } else {
-    print("Not eligible");
-  }
+  List<int> number = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+  ];
+  List<int> newList = number.map((a) => a * a).toList();
+  print("Original List        : $number");
+  print("Squared Numbers List : $newList");
 }
